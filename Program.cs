@@ -27,24 +27,24 @@
 // PrintStudentCard("Валерия", 17, "ИСП-252");
 
 
-// double CalculateScholarship(double baseAmount, double bonusPercent) {
-//     return baseAmount + baseAmount * bonusPercent / 100;
-// }
+double CalculateScholarship(double baseAmount, double bonusPercent) {
+    return baseAmount + baseAmount * bonusPercent / 100;
+}
 
-// bool IsEligibleForBonus(double averageGrade) {
-//     return averageGrade >= 4.5;
-// }
+bool IsEligibleForBonus(double averageGrade) {
+    return averageGrade >= 4.5;
+}
 
-// double baseAmount = 2000;
-// double bonusPercent = 15;
-// double averageGrade = 4.7;
+double baseAmount = 2000;
+double bonusPercent = 15;
+double averageGrade = 4.7;
 
-// if (IsEligibleForBonus(averageGrade)) {
-//     double result = CalculateScholarship(baseAmount, bonusPercent);
-//     Console.WriteLine($"Стипендия с надбавкой: {result}");
-// } else {
-//     Console.WriteLine($"Базовая стипендия: {baseAmount}");
-// }
+if (IsEligibleForBonus(averageGrade)) {
+    double result = CalculateScholarship(baseAmount, bonusPercent);
+    Console.WriteLine($"Стипендия с надбавкой: {result}");
+} else {
+    Console.WriteLine($"Базовая стипендия: {baseAmount}");
+}
 
 // double CalculateAverageGrade(int[] grades)
 // {
@@ -115,3 +115,86 @@
 // Console.WriteLine(sum);
 
 
+//Самостоятельные задания А и Б
+//А
+
+// void PrintDivider() {
+//     Console.WriteLine("------------------------");
+// }
+
+// Console.WriteLine("Начало программы");
+// PrintDivider();
+// Console.WriteLine("Середина программы");
+// PrintDivider();
+// Console.WriteLine("Конец программы");
+// PrintDivider();
+
+//Б
+// void PrintPerson(string name, int age) {
+//     Console.WriteLine($"Имя: {name}");
+//     Console.WriteLine($"Возраст: {age} лет");
+// }
+
+// PrintPerson("Галя", 67);
+// PrintPerson("Михаил", 45);
+
+// Console.Write("Введите свою фамилию: "); 
+// string surname = Console.ReadLine()!.Trim(); 
+// if (string.IsNullOrEmpty(surname)) { 
+// Console.WriteLine("Фамилия не введена. Завершение работы."); 
+// return; 
+// } 
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear); 
+// var assigned = Enumerable.Range(1, 10) 
+// .OrderBy(_ => rnd.Next()) 
+// .Take(2) 
+// .OrderBy(x => x) 
+// .ToList(); 
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+//№7
+
+// int FindMin(int[] numbers)
+// {
+//     if (numbers.Length == 0)
+//     {
+//         Console.WriteLine("Пустой массив");
+//     }
+//     int min = numbers[0];
+//     for (int i = 1; i < numbers.Length; i++)
+//     {
+//         if (numbers[i] < min)
+//         {
+//             min = numbers[i];
+//         }
+//     }
+//     return min;
+// }
+
+// int[] myArray = { 15, 3, 99, -5, 7, 2 };
+// int result = FindMin(myArray);
+// Console.WriteLine(result);
+
+//№10
+
+// bool IsPalindrome(string word)
+// {
+//     int left = 0;
+//     int right = word.Length - 1;
+//     while (left < right)
+//     {
+//         if (word[left] != word[right])
+//         {
+//             return false;
+//         }
+//         return false;
+//         right--;
+//     }
+//     return true;
+// }
+
+// string[] tests = { "radar", "level", "hello", "Abba", "", "a" };
+// foreach (var t in tests) {
+//     bool result = IsPalindrome(t);
+//     Console.WriteLine($"'{t}' -> {result}");
+// }
