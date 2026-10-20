@@ -27,3 +27,91 @@
 // PrintStudentCard("Валерия", 17, "ИСП-252");
 
 
+// double CalculateScholarship(double baseAmount, double bonusPercent) {
+//     return baseAmount + baseAmount * bonusPercent / 100;
+// }
+
+// bool IsEligibleForBonus(double averageGrade) {
+//     return averageGrade >= 4.5;
+// }
+
+// double baseAmount = 2000;
+// double bonusPercent = 15;
+// double averageGrade = 4.7;
+
+// if (IsEligibleForBonus(averageGrade)) {
+//     double result = CalculateScholarship(baseAmount, bonusPercent);
+//     Console.WriteLine($"Стипендия с надбавкой: {result}");
+// } else {
+//     Console.WriteLine($"Базовая стипендия: {baseAmount}");
+// }
+
+// double CalculateAverageGrade(int[] grades)
+// {
+//     int sum = 0;
+//     foreach (int grade in grades)
+//     {
+//         sum += grade;
+//     }
+//     return (double)sum / grades.Length;
+// }
+// int CountFives(int[] grades)
+// {
+//     int count = 0;
+//     foreach (int grade in grades)
+//     {
+//         if (grade == 5)
+//         {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// int[] grades = { 4, 5, 3, 5, 4 };
+// double average = CalculateAverageGrade(grades);
+// int fivesCount = CountFives(grades);
+
+// Console.WriteLine($"Средний балл: {average}");
+// Console.WriteLine($"Количество пятёрок: {fivesCount}");
+
+
+// void PrintGreeting() {
+//     Console.WriteLine("^");
+//     Console.WriteLine("Добро пожаловать!");
+// }
+
+// PrintGreeting();
+// PrintGreeting();
+
+
+// void PrintGreeting(string userName) {
+//     Console.WriteLine($"Добро пожаловать, {userName}!");
+// }
+
+// PrintGreeting("Ярослав");
+// PrintGreeting("Дмитрий");
+
+
+
+// int Add(int a, int b) {
+//     return a + b;
+// }
+
+// int result = Add(5, 3);
+// Console.WriteLine(result);
+
+
+// int SumArray(int[] numbers) {
+//     int total = 0;
+//     foreach (int number in numbers) {
+//         total += number;
+//     }
+//     return total;
+// }
+
+// int[] values = { 10, 20, 30 };
+// int sum = SumArray(values);
+// Console.WriteLine(sum);
+
+
